@@ -1,0 +1,868 @@
+*
+
+{
+padding:0;
+margin:0;
+}
+.header{
+    height: 1000px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./img/banner1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top:40px;
+    text-align: center;
+    color: #fff;
+}
+.header img{
+    float: left;
+    cursor: pointer;
+    animation: movedown 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes movedown{
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+.header img:hover{
+    opacity: 50%;
+}
+
+.navbar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+nav{
+    flex: 1;
+    padding-left: 60px;
+    animation: movedown 1s linear 1;
+    animation-delay: 2s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+nav ul li a:hover{
+    color: grey;
+}
+
+.login-btn{
+    width: 100px;
+    padding: 8px 0;
+    outline: none !important;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background: transparent;
+    color: #fff !important;
+    float: right;
+    animation: zoomin 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    text-decoration:none !important;
+    
+}
+.login-btn:hover{
+    opacity: 50%;
+}
+.header h1{
+    padding-top: 260px;
+    padding-bottom: 0;
+    font-size: 55px;
+    animation: zoomin 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.header p{
+    margin: 18px 0;
+    animation: zoomin 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+
+.input-group{
+    width: 90% !important;
+    max-width: 500px;
+    border-radius: 30px;
+    background: #fff;
+    margin: auto;
+    padding: 2px;
+    animation: zoomin 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    
+}
+@keyframes zoomin{
+    0%{
+        transform: scale(0.5);
+        visibility: visible;
+    }
+    100%{
+        transform: scale(1);
+        visibility: visible;
+    }
+}
+
+.form-control{
+    border: 0 !important;
+    border-radius:30px !important;
+    margin: 2px;
+    box-shadow: none !important;
+}
+.input-group2{
+    width: auto;
+}
+
+.input-group-text{
+    width: 100px;
+    background-image: linear-gradient(#00ff7e,#1f3d90);
+    border: 0 !important;
+    color: #fff !important;
+    padding: 9px 25px !important;
+    border-radius: 30px !important;
+    box-shadow: none !important;
+    margin-right: 0px !important;
+}
+.input-group-text:hover{
+    opacity: 50%;
+}
+/*features*/
+.features{
+    padding: 100px 0;
+}
+h1{
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.feature-img img{
+    width: 100%;
+    height:300px;
+}
+
+.price{
+    width: 50px;
+    height: 50px;
+    background: #ff5722;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 1px 1px 10px 1px rgba(37,73,214,0.18);
+    position: absolute;
+    left: 20px;
+    bottom: -25px;
+}
+.feature-img{
+    position: relative;
+}
+.rating{
+    padding:3px;
+    float: right;
+    background: #fff;
+    bottom: -1px;
+    right: 0;
+    position: absolute;
+}
+.features .fas{
+    font-size: 15px;
+    color:#ff5722;
+}
+.features .far{
+    font-size: 15px;
+    color:#ff5722;
+}
+
+.feature-details{
+    padding: 20px;
+    text-align: justify;
+    
+}
+.feature-details h4{
+    font-weight: 600;
+    margin-top: 20px;
+}
+.feature-details .fas{
+    margin-right: 5px;
+}
+.feature-details .far{
+    margin-right: 5px;
+}
+
+.feature-box{
+    box-shadow: 2px 2px 10px 1px rgba(37,73,214,0.18);
+    margin-bottom: 30px;
+    height: 650px;
+}
+.gallery{
+    padding: 100px 0;
+    background: #efefef;
+}
+.gallery-box img{
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+.gallery-box img:hover{
+    transform: scale(1.1);
+    
+}
+.gallery-box h4{
+    width: 200px;
+    color: #fff;
+    text-shadow: -2px 2px 2px #000;
+    text-align: center;
+    font-weight: 400;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.gallery-box{
+    position: relative;
+    margin-bottom: 30px;
+}
+.banner{
+    height: 800px;
+    background-image: url(./img/maldives.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 15%;
+}
+.banner-highlights{
+    padding: 70px 0;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    color: #fff;
+}
+.booking-btn{
+    width: 120px !important;
+    padding: 8px 0;
+    outline: none !important;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background: transparent;
+    color: #fff;
+    float: right;
+      
+}
+.booking-bt:hover{
+
+    opacity: 50% !important;
+}
+.booking-btn a{
+    text-decoration: none;
+    color: white;
+}
+.booking-btn a:hover{
+    color: grey;
+}
+.users-feedback{
+    padding: 100px 0;
+    
+
+}
+.user-review{
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 100,0.2);
+    padding-bottom: 50px;
+    
+
+}
+.user-review p{
+    padding: 50px 10px 10px 10px;
+    text-align: justify;
+}
+.users-feedback img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: relative;
+    margin: -30px 0px 20px 40%;
+}
+
+.footer{
+    padding: 100px 20px 15px;
+    background-image: linear-gradient(#2d557d,#9610fd);
+    color: #fff;
+    width: 100%;
+}
+.footer-logo{
+    
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+   
+}
+.footer h4{
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-left: 50px;
+}
+.footer .row .fa{
+    padding: 10px;
+    font-size: 15px;
+}
+.footer .row .far{
+    padding: 10px;
+    font-size: 15px;
+}
+.footer .row .fab{
+    padding: 10px;
+    font-size: 15px;
+}
+.footer p{
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 35px;
+    margin-left: 50px;
+   
+}
+.footer .p1{
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 35px;
+    
+    
+}
+.footer .p2{
+    font-size: 15px;
+    text-align: justify;
+    padding-right: 35px;
+    padding: 7px;
+}
+
+.footer hr{
+    margin-top: 10px;
+    background: #fff;
+}
+
+.footer .copyright{
+    text-align: center;
+}
+
+
+/*contacts*/
+
+.header-c{
+    height: 1300px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./img/banner1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 40px;
+    text-align: center;
+    color: #fff;
+    
+}
+.header-c img{
+   
+    float: left;
+    cursor: pointer;
+    animation: movedown 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes movedown{
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+.header-c img:hover{
+    opacity: 50%;
+}
+
+#tabela{
+    margin: auto;
+    animation: zoomin 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    
+}
+td{
+    text-align: left;
+    animation: zoomin 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+    
+}
+#lbl{
+    text-align: left;animation: zoomin 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.contactinfo{
+    margin-top: 100px;
+    animation: zoomin 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+#cu{
+    animation: zoomin 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+
+/*search*/
+
+#submit2{
+    width: 100px;
+    background-image: linear-gradient(#00ff7e,#1f3d90);
+    border: 0 !important;
+    color: #fff !important;
+    padding: 9px 25px !important;
+    border-radius: 30px !important;
+    box-shadow: none !important;
+}
+.header-s{
+    height: 1300px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./img/banner1.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 40px;
+    text-align: center;
+    color: #fff;
+    
+}
+.header-s img{
+   
+    float: left;
+    cursor: pointer;
+}
+.header-s img:hover{
+    opacity: 50%;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.header-s nav{
+    flex: 1;
+    padding-left: 60px;
+    animation: none !important;
+    visibility: visible;
+}
+.header-s nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+.header-s nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.header-s nav ul li a:hover{
+    color: grey;
+}
+#pc a{
+    text-decoration: none;
+    color: #fff;
+}
+.ds{
+    margin-top: 3%;
+    font-weight: bold inherit;
+    font-size:x-large;
+}
+/*gallery new york*/
+
+.header-ny{
+    height: 2000px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./gallery/pic/newyork1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 40px;
+    text-align: center;
+    color: #fff;
+    
+}
+.header-ny img{
+   
+    float: left;
+    cursor: pointer;
+ 
+}
+.header-ny img:hover{
+    opacity: 50%;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.header-ny nav{
+    flex: 1;
+    padding-left: 60px;
+    animation: none !important;
+    visibility: visible;
+ 
+}
+.header-ny nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+.header-ny nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.header-ny nav ul li a:hover{
+    color: grey;
+}
+.ny{
+    width: 600px !important;
+    height: 400px !important;
+    display: block !important;
+    text-align: center !important;
+    margin-left: 30% !important;
+    margin-top: 5%;
+    border-radius: 5px;
+    border: 2px solid white ;
+    box-shadow: 5px 5px 15px lightslategrey;
+   
+    
+}
+
+
+
+
+/* galerry barcelona*/
+
+.header-ba{
+    height: 2000px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./gallery/pic/barca.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 40px;
+    text-align: center;
+    color: #fff;
+    
+}
+.header-ba img{
+   
+    float: left;
+    cursor: pointer;
+  
+}
+.header-ba img:hover{
+    opacity: 50%;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.header-ba nav{
+    flex: 1;
+    padding-left: 60px;
+    animation: none !important;
+    visibility: visible;
+    ;
+}
+.header-ba nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+  
+ 
+}
+.header-ba nav ul li a{
+    text-decoration: none;
+    color: #fff;
+  
+}
+.header-ba nav ul li a:hover{
+    color: grey;
+}
+
+
+
+/* gallery tokyo*/
+
+
+.header-to{
+    height: 2000px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./gallery/pic/tokyoback.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 40px;
+    text-align: center;
+    color: #fff;
+    
+}
+.header-to img{
+   
+    float: left;
+    cursor: pointer;
+}
+.header-to img:hover{
+    opacity: 50%;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.header-to nav{
+    flex: 1;
+    padding-left: 60px;
+    animation: none !important;
+    visibility: visible;
+}
+.header-to nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+.header-to nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.header-to nav ul li a:hover{
+    color: grey;
+}
+
+
+
+/* gallery hong kong*/
+
+
+.header-hk{
+    height: 2000px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./gallery/pic/hk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 40px;
+    text-align: center;
+    color: #fff;
+    
+}
+.header-hk img{
+   
+    float: left;
+    cursor: pointer;
+}
+.header-hk img:hover{
+    opacity: 50%;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.header-hk nav{
+    flex: 1;
+    padding-left: 60px;
+    animation: none !important;
+    visibility: visible;
+}
+.header-hk nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+}
+.header-hk nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.header-hk nav ul li a:hover{
+    color: grey;
+} 
+
+
+
+/* booking form */
+
+.header-book{
+    height: 1600px;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(./booking/pictures/FotoJet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 40px;
+    text-align: center;
+    color: #fff;
+    
+}
+.header-book img{
+   
+    float: left;
+    cursor: pointer;
+    animation: movedown 1s linear 1;
+    animation-delay: 1s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+@keyframes movedown{
+    0%{
+        transform: translateY(-100px);
+        visibility: visible;
+    }
+    100%{
+        transform: translateY(0);
+        visibility: visible;
+    }
+}
+.header-book img:hover{
+    opacity: 50%;
+}
+
+.bb{
+    width: 100px;
+    background-image: linear-gradient(#00ff7e,#1f3d90);
+    border: 0 !important;
+    color: #fff !important;
+    padding: 9px 25px !important;
+    border-radius: 30px !important;
+    box-shadow: none !important;
+}
+.booking-form{
+    color: white;
+}
+.table th{
+    color: white !important;
+    text-align: center !important;
+}
+.table td{
+    color: white !important;
+    text-align: center !important;
+}
+.booking-form form{
+    animation: zoomin 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+#bf{
+    animation: zoomin 1s linear 1;
+    animation-delay: 3s;
+    visibility: hidden;
+    animation-fill-mode: forwards;
+}
+.header .welc{
+    width: 200px;
+    padding: 1px 0px;
+    outline: none !important;
+    color: #fff;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 800px) {
+    
+    .booking-btn{
+        margin-left: 35%;
+    }
+    #tabela{
+        margin-left:auto !important; 
+    }
+    .ny{
+        margin: auto !important;
+        width: 100% !important;
+    }
+    .header-s{
+        width: 100%;
+        
+        
+    }
+    .header-ny{
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-ba{
+        width: 100%;
+        height: 100%;
+    }
+
+    .header-to{
+        width: 100%;
+        height: 100%;
+    }
+    .header-hk{
+        width: 100%;
+        height: 100%;
+    }
+    .header-book{
+        width: 100%;
+        
+    }
+    .booking-form input{
+        width: 100%;
+    }
+
+
+ 
+ 
+      
+}
